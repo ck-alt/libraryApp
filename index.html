@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book App</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div>
+    <h1 class="header">Book Store</h1>
+    <div class="book">
+        <p>Welcome to online book store!</p>
+        <p>Use the add-a-book-button to add list of books,
+            you will like to keep record of.
+        </p>
+    </div>
+
+    <div class="add">
+        <p>Add book(s) </p>
+        <input type="button" value="+">
+    </div>
+
+    <div class="modal-cont">
+        <div class="modal-box">
+            <span class="close">&times</span>
+            <form action="">
+                <div class="modal">
+                    <label for="title">Book title</label>
+                    <input type="text" name="title" id="title" required>
+                </div>
+                <div class="modal">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author" required>
+                </div>
+                <div class="modal">
+                    <label for="pages">Number of pages</label>
+                    <input type="number" name="pages" id="pages" required>
+                </div>
+                <div class="read-check">
+                    <label for="read">Have you read the book?</label>
+                    <select name="read" id="read" class="read">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="add-button">
+                    <button class="add-book">ADD</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+</body>
+</html>

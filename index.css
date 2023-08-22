@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a9a9a9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 4rem;
+}
+
+.book{
+    height: calc(50vh);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+
+.add input{
+    color: red;
+    border: none;
+    margin-left: 10px;
+}
+
+.add input:hover{
+    border: 1px solid red;
+    cursor: grab;
+}
+
+.add{
+    font-size: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.modal-cont{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.47);
+  top:0;
+  left:0;
+  overflow: auto;
+}
+
+.modal-box{
+    top: 40px;
+    padding-top: 20px;
+    width: 300px;
+    margin: 30px auto;
+    background-color: white;
+    position: relative;
+}
+ .modal-box .close{
+    position: absolute;
+    right: 16px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+ }
+
+ .modal-box .close:hover, .modal-box .close:focus{
+    color:#c6c6c6;
+ }
+
+ input[type=text], input[type=number]{
+    width: 90%;
+    border: 1px solid #d0d0d0;
+    display: block;
+    padding: 8px;
+    margin: 5px auto;
+    margin-bottom: 10px;
+ }
+
+ .modal-box label, .modal-box input{
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+ }
+
+ .modal-box span{
+    float: right;
+ }
+
+ .read-check{
+    position: relative;
+ }
+
+ .read{
+    position: relative;
+    top: -30px;
+    right:-210px;
+ }
+
+ .add-book{
+    margin: 0 0 10px 10px;
+    background-color: #c44f4f;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+ }
+
+ .modal-cont{display:none;}
+
+ .modal-box{
+    animation-name: zoom;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+ }
+
+ @keyframes zoom{
+    from{transform: scale(0);}
+    to{transform:scale(1);}
+ }
+
+ table,th, td{
+   margin-top: 0;
+   padding: 10px;
+ }
+
+ table{
+   width: 80%;
+   text-align: left;
+ }
+
+ .removeRow{
+   display: flex;
+   justify-content: space-between;
+
+ }
+
+ 
+
+
+
